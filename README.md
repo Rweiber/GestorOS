@@ -97,16 +97,13 @@ create table tbos(
 
 Clique em "Executar".
 
-📦 4. Rodar o aplicativo Java Baixe o JAR do sistema:  
+📦 4. Rodar o aplicativo:  
 
-Vá até este link no navegador: https://github.com/Rweiber/GestorOS/releases/tag/v1.0.
+A. Execute o sistema(lembre de estar com seu terminal apontal para a pasta do projeto):
 
-Baixe o arquivo prjinfoX.zip.
-
-Extraia o conteúdo (vai conter prjinfoX.jar).
-
-A. Execute o sistema:No terminal (ou clique duas vezes no .jar):
+No terminal (ou clique duas vezes no .jar):
 ```bash
+cd dist
 java -jar prjinfoX.jar
 ```
 Obs: Certifique-se de estar com o XAMPP (MySQL) rodando.
@@ -115,6 +112,7 @@ Obs: Certifique-se de estar com o XAMPP (MySQL) rodando.
 Acesse com:
 
 Usuário: admin
+
 Senha: admin
 
 Se o ícone do banco no login estiver verde, está tudo certo!
