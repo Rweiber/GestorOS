@@ -25,21 +25,87 @@ O sistema tem como objetivo gerenciar ordens de serviços, facilitando o cadastr
 
 ## Instruções para Execução
 
-### Pré-requisitos
+Passo a Passo para Clonar e Rodar o Projeto infox
+✅ Pré-requisitos (você já tem):
 
-- Java JDK 8 ou superior.
-- Banco de dados MySQL rodando com o schema do projeto importado.
+Java 8 ✅
+Git ✅
+XAMPP rodando (MySQL funcionando) ✅
 
-### Configuração
+🚀 1. Clonar o projeto do GitHubAbra o terminal e rode:
+git clone https://github.com/Rweiber/GestorOS
 
-1. Ajustar as configurações de conexão com o banco no arquivo de configuração do projeto.
-2. Importar o script SQL para criar as tabelas necessárias.
+Isso vai criar uma pasta chamada infox com o projeto dentro.
+📂 2. Entrar na pasta do projeto  
+cd infox
 
-### Execução
+🛠️ 3. Instalar o banco de dadosA. Acesse o phpMyAdmin:Abra no navegador:
+http://localhost/phpmyadmin
 
-1. Abrir o projeto no Visual Studio Code.
-2. Compilar e executar a aplicação Java.
-3. A interface Swing será exibida como aplicação desktop para uso.
+B. Crie o banco de dados:  
+
+Clique em "Novo".
+Nomeie como dbinfox.
+Clique em "Criar".
+
+C. Execute o SQL:Com o banco dbinfox selecionado:
+
+Clique na aba SQL.
+Cole o seguinte conteúdo:
+
+create table tbusuarios(
+    iduser int primary key,
+    usuario varchar(15) not null,
+    fone varchar(15),
+    login varchar(15) not null unique,
+    senha varchar(250) not null,
+    perfil varchar(20) not null
+);
+
+insert into tbusuarios(iduser, usuario, login, senha, perfil)
+values(1, 'Administrador', 'admin', md5('admin'), 'admin');
+
+create table tbclientes(
+    idcli int primary key auto_increment,
+    nomecli varchar(50) not null,
+    endcli varchar(100),
+    fonecli varchar(15) not null,
+    emailcli varchar(50) unique
+);
+
+create table tbos(
+    os int primary key auto_increment,
+    data_os timestamp default current_timestamp,
+    tipo varchar(15) not null,
+    situacao varchar(20) not null,
+    equipamento varchar(150) not null,
+    defeito varchar(150),
+    servico varchar(150),
+    tecnico varchar(30),
+    valor decimal(10,2),
+    idcli int not null,
+    foreign key(idcli) references tbclientes(idcli)
+);
+
+
+Clique em "Executar".
+
+📦 4. Rodar o aplicativo JavaA. Baixe o JAR do sistema:  
+
+Vá até este link no navegador: https://github.com/Rweiber/GestorOS/releases.
+Baixe o arquivo dist.zip.
+Extraia o conteúdo (vai conter prjinfoX.jar).
+
+B. Execute o sistema:No terminal (ou clique duas vezes no .jar):
+java -jar prjinfoX.jar
+
+Obs: Certifique-se de estar com o XAMPP (MySQL) rodando.
+✅ 5. Login no sistemaAcesse com:
+
+Usuário: admin
+Senha: admin
+
+Se o ícone do banco no login estiver verde, está tudo certo!
 
 ## Estrutura do Projeto
 
@@ -59,4 +125,3 @@ Disciplina: Padrões de Desenvolvimento de Software em Java
 
 Para dúvidas, sugestões ou contribuições, entre em contato pelo e-mail: hideoutrws2@gmail.com
 
-You can copy the content within the `<xaiArtifact>` tags and paste it directly into your project's `README.md` file.
