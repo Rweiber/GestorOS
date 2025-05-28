@@ -36,23 +36,26 @@ Git ✅
 XAMPP rodando (MySQL funcionando)✅
 
 🚀 1. Clonar o projeto do GitHubAbra o terminal e rode:
+
 ```bash
 git clone https://github.com/Rweiber/GestorOS
 ```
+
 Isso vai criar uma pasta chamada infox com o projeto dentro.
 
 📂 2. Entrar na pasta do projeto
+
 ```bash
 cd GestorOS
 ```
+
 🛠️ 3. Instalar o banco de dados
 
 A. Acesse o phpMyAdmin:Abra no navegador:
 
 http://localhost/phpmyadmin
 
-B. Crie o banco de dados:  
-
+B. Crie o banco de dados:
 
 Clique em "Novo".
 
@@ -67,6 +70,7 @@ Com o banco dbinfox selecionado:
 Clique na aba SQL.
 
 Cole o seguinte conteúdo:
+
 ```sql
 create table tbusuarios(
     iduser int primary key,
@@ -105,15 +109,17 @@ create table tbos(
 
 Clique em "Executar".
 
-📦 4. Rodar o aplicativo:  
+📦 4. Rodar o aplicativo:
 
 A. Execute o sistema (lembre de estar com seu terminal apontado para a pasta do projeto):
 
 No terminal (ou clique duas vezes no .jar):
+
 ```bash
 cd dist
-java -jar prjinfoX.jar
+java -jar gestorOs.jar
 ```
+
 Obs: Certifique-se de estar com o XAMPP (MySQL) rodando.
 
 ✅ 5. Login no sistema
