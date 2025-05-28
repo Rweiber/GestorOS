@@ -1,61 +1,58 @@
-# Sistema de Gestão de Ordem de Serviços
+Sistema de Gestão de Ordem de Serviços
+Descrição do Projeto
+Este projeto, desenvolvido por Renan Weiber para a disciplina Padrões de Desenvolvimento de Software em Java do curso de Análise e Desenvolvimento de Sistemas (ADS) na Faculdade Estácio de Curitiba, é um sistema de gerenciamento de ordens de serviço. Ele facilita o cadastro, controle e acompanhamento de serviços prestados, clientes, técnicos e status das ordens. 
+Desenvolvido em Java com interface gráfica desktop utilizando Swing, o projeto segue o padrão arquitetural MVC (Model-View-Controller) para garantir organização, escalabilidade e facilidade de manutenção do código.
+Funcionalidades Principais
 
-## Descrição do Projeto
+Cadastro e gerenciamento de clientes e técnicos.
+Registro e acompanhamento de ordens de serviço.
+Controle de status das ordens (aberta, em andamento, finalizada).
+Geração de relatórios básicos para monitoramento dos serviços realizados.
+Interface gráfica desktop intuitiva, desenvolvida com Java Swing.
 
-Este projeto foi desenvolvido por Renan Weiber para a disciplina Padrões de Desenvolvimento de Software em Java do curso de Análise e Desenvolvimento de Sistemas (ADS) na Faculdade Estácio de Curitiba.
+Tecnologias Utilizadas
 
-O sistema tem como objetivo gerenciar ordens de serviços, facilitando o cadastro, controle e acompanhamento dos serviços prestados, clientes, técnicos e os status das ordens. Desenvolvido em Java com interface gráfica desktop utilizando Swing, estruturado segundo o padrão arquitetural MVC para garantir organização e manutenção facilitada do código.
+Linguagem: Java
+Interface Gráfica: Java Swing
+Arquitetura: MVC (Model-View-Controller)
+Banco de Dados: MySQL
+Testes Automatizados: JUnit
+IDE Utilizada: Visual Studio Code (VSCode)
 
-## Funcionalidades Principais
+Instruções para Execução
+Pré-requisitos
+Antes de começar, certifique-se de ter os seguintes itens instalados:
 
-- Cadastro e gerenciamento de clientes e técnicos.
-- Registro e acompanhamento das ordens de serviço.
-- Controle de status das ordens (aberta, em andamento, finalizada).
-- Relatórios básicos para monitoramento dos serviços realizados.
-- Interface desktop gráfica desenvolvida com Java Swing para facilitar a interação do usuário.
+Java JDK 8 ou superior: Necessário para compilar e executar o aplicativo Java.
+Git: Para clonar o repositório do projeto.
+XAMPP: Para rodar o servidor MySQL localmente.
+MySQL: Banco de dados configurado e funcionando via XAMPP.
+Navegador Web: Para acessar o phpMyAdmin.
 
-## Tecnologias Utilizadas
+Passo a Passo para Clonar e Rodar o Projeto
 
-- **Linguagem**: Java
-- **Interface Gráfica**: Java Swing
-- **Arquitetura**: MVC (Model-View-Controller)
-- **Banco de dados**: MySQL
-- **Testes automatizados**: JUnit
-- **IDE utilizada**: Visual Studio Code (VSCode)
+Clonar o projeto do GitHubAbra o terminal e execute o comando abaixo para clonar o repositório:
+git clone https://github.com/Rweiber/GestorOS.git
 
-## Instruções para Execução
+Isso criará uma pasta chamada GestorOS com os arquivos do projeto.
 
-Passo a Passo para Clonar e Rodar o Projeto infox
-✅ Pré-requisitos (você já tem):
+Entrar na pasta do projetoNavegue até a pasta clonada:
+cd GestorOS
 
-Java 8 ✅
-Git ✅
-XAMPP rodando (MySQL funcionando) ✅
 
-🚀 1. Clonar o projeto do GitHubAbra o terminal e rode:
-git clone https://github.com/Rweiber/GestorOS
-
-Isso vai criar uma pasta chamada infox com o projeto dentro.
-
-📂 2. Entrar na pasta do projeto  
-cd infox
-
-🛠️ 3. Instalar o banco de dadosA. Acesse o phpMyAdmin:Abra no navegador:
-
+Configurar o banco de dadosa. Acesse o phpMyAdmin:   No navegador, abra:
 http://localhost/phpmyadmin
 
-A. Crie o banco de dados:  
+b. Crie o banco de dados:  
 
 Clique em "Novo".
-Nomeie como dbinfox.
+Nomeie o banco como dbinfox.
 Clique em "Criar".
 
-B. Execute o SQL:Com o banco dbinfox selecionado:
+c. Execute o script SQL:   Com o banco dbinfox selecionado:  
 
-Clique na aba SQL.
-Cole o seguinte conteúdo:
-
-create table tbusuarios(
+Clique na aba "SQL".
+Cole o seguinte script:create table tbusuarios(
     iduser int primary key,
     usuario varchar(15) not null,
     fone varchar(15),
@@ -90,42 +87,44 @@ create table tbos(
 );
 
 
-Clique em "Executar".
+Clique em "Executar" para criar as tabelas e inserir o usuário padrão.
 
-📦 4. Rodar o aplicativo Java Baixe o JAR do sistema:  
 
-Vá até este link no navegador: https://github.com/Rweiber/GestorOS/releases/tag/v1.0.
+Rodar o aplicativo Javaa. Baixe o JAR do sistema:  
+
+Acesse o link: https://github.com/Rweiber/GestorOS/releases/tag/v1.0.
 Baixe o arquivo prjinfoX.zip.
-Extraia o conteúdo (vai conter prjinfoX.jar).
+Extraia o conteúdo para obter o arquivo prjinfoX.jar.
 
-A. Execute o sistema:No terminal (ou clique duas vezes no .jar):
+b. Execute o sistema:   No terminal, ou clicando duas vezes no arquivo .jar, execute:
 java -jar prjinfoX.jar
 
-Obs: Certifique-se de estar com o XAMPP (MySQL) rodando.
+   Nota: Certifique-se de que o XAMPP (MySQL) esteja rodando antes de executar o aplicativo.
 
-✅ 5. Login no sistema
-Acesse com:
+Login no sistemaUse as credenciais abaixo para acessar o sistema:
 
 Usuário: admin
-Senha: admin
+Senha: adminSe o ícone do banco de dados no login estiver verde, a conexão com o banco foi estabelecida com sucesso.
 
-Se o ícone do banco no login estiver verde, está tudo certo!
 
-## Estrutura do Projeto
 
-- **Model**: Classes que representam entidades como Cliente, Técnico e Ordem de Serviço.
-- **View**: Telas e componentes desenvolvidos em Java Swing.
-- **Controller**: Classes que gerenciam a lógica e a interação entre Model e View.
-- **Testes**: Testes unitários com JUnit para garantir a qualidade do código.
+Execução Alternativa (via IDE)
 
-## Autor
+Abra o projeto no Visual Studio Code.
+Configure as dependências e a conexão com o banco no arquivo de configuração do projeto.
+Compile e execute a aplicação Java.
+A interface gráfica Swing será exibida para uso.
 
-Renan Weiber  
-Aluno do curso de Análise e Desenvolvimento de Sistemas (ADS)  
-Faculdade Estácio de Curitiba  
-Disciplina: Padrões de Desenvolvimento de Software em Java
+Estrutura do Projeto
 
-## Contato
+Model: Contém as classes que representam as entidades do sistema, como Cliente, Técnico e Ordem de Serviço.
+View: Inclui as telas e componentes gráficos desenvolvidos com Java Swing.
+Controller: Classes responsáveis pela lógica de negócios e pela interação entre Model e View.
+Testes: Testes unitários implementados com JUnit para garantir a qualidade e robustez do código.
 
-Para dúvidas, sugestões ou contribuições, entre em contato pelo e-mail: hideoutrws2@gmail.com
-
+Autor
+Renan WeiberAluno do curso de Análise e Desenvolvimento de Sistemas (ADS)Faculdade Estácio de CuritibaDisciplina: Padrões de Desenvolvimento de Software em Java
+Contato
+Para dúvidas, sugestões ou contribuições, entre em contato pelo e-mail: hideoutrws2@gmail.com.
+Licença
+Este projeto é distribuído sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
