@@ -92,8 +92,8 @@ Clique em "Executar".
 
 📦 4. Rodar o aplicativo JavaA. Baixe o JAR do sistema:  
 
-Vá até este link no navegador: https://github.com/Rweiber/GestorOS/releases.
-Baixe o arquivo dist.zip.
+Vá até este link no navegador: https://github.com/Rweiber/GestorOS/releases/tag/v1.0.
+Baixe o arquivo prjinfoX.zip.
 Extraia o conteúdo (vai conter prjinfoX.jar).
 
 B. Execute o sistema:No terminal (ou clique duas vezes no .jar):
