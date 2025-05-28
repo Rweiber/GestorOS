@@ -26,11 +26,14 @@ O sistema tem como objetivo gerenciar ordens de serviços, facilitando o cadastr
 ## Instruções para Execução
 
 Passo a Passo para Clonar e Rodar o Projeto infox
-✅ Pré-requisitos (você já tem):
+
+✅ Pré-requisitos:
 
 Java 8 ✅
+
 Git ✅
-XAMPP rodando (MySQL funcionando) ✅
+
+XAMPP rodando (MySQL funcionando)✅
 
 🚀 1. Clonar o projeto do GitHubAbra o terminal e rode:
 ```bash
