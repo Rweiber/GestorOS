@@ -31,7 +31,6 @@ import javax.swing.JOptionPane;
 /**
  * Autenticação do usuário
  *
- * @author Professor José de Assis
  */
 public class TelaLogin extends javax.swing.JFrame {
 

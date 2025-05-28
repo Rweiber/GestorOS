@@ -35,7 +35,6 @@ import net.sf.jasperreports.view.JasperViewer;
 /**
  * Tela principal do sistema
  *
- * @author Professor José de Assis
  */
 public class TelaPrincipal extends javax.swing.JFrame {
 

@@ -36,7 +36,6 @@ import net.sf.jasperreports.view.JasperViewer;
 /**
  * Tela de gestão do sistema
  *
- * @author Professor José de Assis
  */
 public class TelaOS extends javax.swing.JInternalFrame {
 

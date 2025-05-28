@@ -30,9 +30,7 @@ import javax.swing.JOptionPane;
 
 /**
  * Tela de gestão de usuários
- *
- * @author Professor José de Assis
- */
+ * */
 public class TelaUsuario extends javax.swing.JInternalFrame {
 
     Connection conexao;

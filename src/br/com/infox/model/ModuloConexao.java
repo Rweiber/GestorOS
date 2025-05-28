@@ -26,7 +26,6 @@ import java.sql.*;
 /**
  * Conexão com o banco de dados
  *
- * @author Professor José de Assis
  * @version 1.1
  */
 public class ModuloConexao {

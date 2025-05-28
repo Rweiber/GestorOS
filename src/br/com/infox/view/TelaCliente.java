@@ -32,7 +32,6 @@ import net.proteanit.sql.DbUtils;
 /**
  * Tela de gestão de clientes
  *
- * @author Professor José de Assis
  */
 public class TelaCliente extends javax.swing.JInternalFrame {
 

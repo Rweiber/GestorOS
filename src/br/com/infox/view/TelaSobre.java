@@ -29,7 +29,6 @@ import java.net.URISyntaxException;
 /**
  * Tela Sobre
  *
- * @author Professor José de Assis
  */
 public class TelaSobre extends javax.swing.JFrame {
 
