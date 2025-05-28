@@ -45,17 +45,19 @@ Isso vai criar uma pasta chamada infox com o projeto dentro.
 ```bash
 cd GestorOS
 ```
-🛠️ 3. Instalar o banco de dadosA. Acesse o phpMyAdmin:Abra no navegador:
+🛠️ 3. Instalar o banco de dados
+
+A. Acesse o phpMyAdmin:Abra no navegador:
 
 http://localhost/phpmyadmin
 
-A. Crie o banco de dados:  
+B. Crie o banco de dados:  
 
 Clique em "Novo".
 Nomeie como dbinfox.
 Clique em "Criar".
 
-B. Execute o SQL:Com o banco dbinfox selecionado:
+C. Execute o SQL:Com o banco dbinfox selecionado:
 
 Clique na aba SQL.
 Cole o seguinte conteúdo:
