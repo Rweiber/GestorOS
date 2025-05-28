@@ -53,13 +53,19 @@ http://localhost/phpmyadmin
 
 B. Crie o banco de dados:  
 
+
 Clique em "Novo".
+
 Nomeie como dbinfox.
+
 Clique em "Criar".
 
-C. Execute o SQL:Com o banco dbinfox selecionado:
+C. Execute o SQL:
+
+Com o banco dbinfox selecionado:
 
 Clique na aba SQL.
+
 Cole o seguinte conteúdo:
 ```sql
 create table tbusuarios(
