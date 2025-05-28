@@ -107,7 +107,7 @@ Clique em "Executar".
 
 📦 4. Rodar o aplicativo:  
 
-A. Execute o sistema(lembre de estar com seu terminal apontal para a pasta do projeto):
+A. Execute o sistema (lembre de estar com seu terminal apontado para a pasta do projeto):
 
 No terminal (ou clique duas vezes no .jar):
 ```bash
