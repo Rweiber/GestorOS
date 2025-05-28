@@ -45,19 +45,27 @@ Isso vai criar uma pasta chamada infox com o projeto dentro.
 ```bash
 cd GestorOS
 ```
-🛠️ 3. Instalar o banco de dadosA. Acesse o phpMyAdmin:Abra no navegador:
+🛠️ 3. Instalar o banco de dados
+
+A. Acesse o phpMyAdmin:Abra no navegador:
 
 http://localhost/phpmyadmin
 
-A. Crie o banco de dados:  
+B. Crie o banco de dados:  
+
 
 Clique em "Novo".
+
 Nomeie como dbinfox.
+
 Clique em "Criar".
 
-B. Execute o SQL:Com o banco dbinfox selecionado:
+C. Execute o SQL:
+
+Com o banco dbinfox selecionado:
 
 Clique na aba SQL.
+
 Cole o seguinte conteúdo:
 ```sql
 create table tbusuarios(
@@ -97,16 +105,13 @@ create table tbos(
 
 Clique em "Executar".
 
-📦 4. Rodar o aplicativo Java Baixe o JAR do sistema:  
+📦 4. Rodar o aplicativo:  
 
-Vá até este link no navegador: https://github.com/Rweiber/GestorOS/releases/tag/v1.0.
+A. Execute o sistema (lembre de estar com seu terminal apontado para a pasta do projeto):
 
-Baixe o arquivo prjinfoX.zip.
-
-Extraia o conteúdo (vai conter prjinfoX.jar).
-
-A. Execute o sistema:No terminal (ou clique duas vezes no .jar):
+No terminal (ou clique duas vezes no .jar):
 ```bash
+cd dist
 java -jar prjinfoX.jar
 ```
 Obs: Certifique-se de estar com o XAMPP (MySQL) rodando.
@@ -115,6 +120,7 @@ Obs: Certifique-se de estar com o XAMPP (MySQL) rodando.
 Acesse com:
 
 Usuário: admin
+
 Senha: admin
 
 Se o ícone do banco no login estiver verde, está tudo certo!
