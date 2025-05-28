@@ -36,19 +36,21 @@ XAMPP rodando (MySQL funcionando) ✅
 git clone https://github.com/Rweiber/GestorOS
 
 Isso vai criar uma pasta chamada infox com o projeto dentro.
+
 📂 2. Entrar na pasta do projeto  
 cd infox
 
 🛠️ 3. Instalar o banco de dadosA. Acesse o phpMyAdmin:Abra no navegador:
+
 http://localhost/phpmyadmin
 
-B. Crie o banco de dados:  
+A. Crie o banco de dados:  
 
 Clique em "Novo".
 Nomeie como dbinfox.
 Clique em "Criar".
 
-C. Execute o SQL:Com o banco dbinfox selecionado:
+B. Execute o SQL:Com o banco dbinfox selecionado:
 
 Clique na aba SQL.
 Cole o seguinte conteúdo:
@@ -90,17 +92,19 @@ create table tbos(
 
 Clique em "Executar".
 
-📦 4. Rodar o aplicativo JavaA. Baixe o JAR do sistema:  
+📦 4. Rodar o aplicativo Java Baixe o JAR do sistema:  
 
 Vá até este link no navegador: https://github.com/Rweiber/GestorOS/releases/tag/v1.0.
 Baixe o arquivo prjinfoX.zip.
 Extraia o conteúdo (vai conter prjinfoX.jar).
 
-B. Execute o sistema:No terminal (ou clique duas vezes no .jar):
+A. Execute o sistema:No terminal (ou clique duas vezes no .jar):
 java -jar prjinfoX.jar
 
 Obs: Certifique-se de estar com o XAMPP (MySQL) rodando.
-✅ 5. Login no sistemaAcesse com:
+
+✅ 5. Login no sistema
+Acesse com:
 
 Usuário: admin
 Senha: admin
