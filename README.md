@@ -27,7 +27,7 @@ O sistema tem como objetivo gerenciar ordens de serviços, facilitando o cadastr
 
 Passo a Passo para Clonar e Rodar o Projeto infox
 
-✅ Pré-requisitos:
+Pré-requisitos:
 
 Java 8 ✅
 
