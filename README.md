@@ -82,7 +82,7 @@ create table tbusuarios(
 );
 
 insert into tbusuarios(iduser, usuario, login, senha, perfil)
-values(1, 'Administrador', 'admin', md5('admin'), 'admin');
+values(1, 'Administrador', 'admin', 'admin', 'admin');
 
 create table tbclientes(
     idcli int primary key auto_increment,
